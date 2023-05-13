@@ -2,37 +2,86 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+input:focus {
+  outline: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.todo-container{
+  box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.2);
+}
+#header{
+  color:pink;
+  font-size:5rem;
+  font-weight: 200;
+  font-family: 'Padyakke Expanded One', cursive;
+}
+#stacked-todo, #second-stacked-todo{
+  height: 5px;
+  /* border-color: lightgrey;
+  border-style: solid;
+  border-width: 0px 1.4px 1.4px 1.4px; */
+}
+#stacked-todo{
+  width: 74.3%;
+  box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.2);
+}
+#second-stacked-todo{
+  width: 73.6%;
+  box-shadow: 0px 2px 6px 1px rgba(0, 0, 0, 0.2);
+}
+.todo-item{
+  border: 0px;
+  color: grey;
+}
+button[type="submit"] {
+  border: 0px;
+  background: rgb(253, 216, 222);
+  padding: 0.5rem 1rem;
+  font-size: x-small;
+  color: grey;
+  transition: background 250ms ease-in-out, 
+              transform 150ms ease;
+}
+button[type="submit"]:hover,
+button[type="submit"]:focus {
+  background: pink;
+}
+button[type="submit"]:active {
+  transform: scale(0.99);
+}
+.invalid-input{
+  border: 2px solid pink;
+}
+.valid-input{
+  border: 0px;
+}
+.delete-btn{
+  border:0px;
+  padding-right:1.5rem;
+  color:pink;
+  z-index:1;
+  background-color: transparent;
+}
+#count{
+  padding-left: 0.5rem;
+  font-size: x-small;
+  color:rgb(201, 199, 199);
+  margin:0px;
+}
+#footer{
+  font-size: xx-small;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgb(212, 208, 208);
+  opacity: 1; /* Firefox */
 }
 
-.App-link {
-  color: #61dafb;
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+color: rgb(212, 208, 208);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+::-ms-input-placeholder { /* Microsoft Edge */
+color: rgb(212, 208, 208);
 }
