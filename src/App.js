@@ -10,8 +10,8 @@ function App() {
         <div id="stacked-todo"></div>
               <div id="second-stacked-todo"></div>
         <p className="mt-5" id="footer">
-          Made by{" "}
-          <a href="https://github.com/jessicabrinegar">Jessie B</a>, with love!
+          Made with React.js. Click {" "}
+          <a href="https://github.com/jessicabrinegar/todo-list">here</a> to see code.
         </p>
       </div>
     </div>
